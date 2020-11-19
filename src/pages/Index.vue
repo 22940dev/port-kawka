@@ -9,9 +9,6 @@ import ProjectsList from "../components/ProjectsList"
 
 export default {
   name: "Homepage",
-  metaInfo: {
-    title: 'Hello, world!'
-  },
   components: {
     ProjectsList
   }

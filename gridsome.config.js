@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Kawka Mateusz Front End Developer',
+  // siteUrl: 'https://mateuszkawka.github.io',
+  // pathPrefix: '/portfolio-gridsome',
   plugins: [
     {
       use: "@gridsome/source-filesystem",

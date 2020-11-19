@@ -11,14 +11,14 @@
       <!-- <p class="project__desc">{{ $page.project.description }}</p> -->
       <div class="project-links">
         <a
-          :href="$page.project.liveLink"
+          :href="$page.project.repoLink"
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"
           >Code</a
         >
         <a
-          :href="$page.project.repoLink"
+          :href="$page.project.liveLink"
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"

@@ -8,7 +8,7 @@
         >
       </h1>
       <a
-        href="https://drive.google.com/file/d/167sRdn9vo0Zhj9zi01y9ksNu4fgejWjT/view"
+        href="https://drive.google.com/file/d/1o2cQG-OaBFX3km-197XUWNLxUhX22-jR/view"
         class="header__link"
         >Download cv</a
       >
@@ -45,7 +45,7 @@ query {
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  --default-border-radius: 2px;
+  --default-border-radius: 4px;
 }
 
 /* html[class="scheme-dark"] {

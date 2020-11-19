@@ -27,5 +27,6 @@ export default {
     display: flex;
     justify-content: center;
     flex-flow: column;
+    padding-bottom: var(--space-medium);
 }
 </style>
