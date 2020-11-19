@@ -10,8 +10,20 @@
       </div>
       <!-- <p class="project__desc">{{ $page.project.description }}</p> -->
       <div class="project-links">
-          <a href="" class="project-links__link">Code</a>
-          <a href="" class="project-links__link">Live preview</a>
+        <a
+          :href="$page.project.liveLink"
+          rel="noopener noreferrer"
+          target="blank"
+          class="project-links__link"
+          >Code</a
+        >
+        <a
+          :href="$page.project.repoLink"
+          rel="noopener noreferrer"
+          target="blank"
+          class="project-links__link"
+          >Live preview</a
+        >
       </div>
       <article class="markdown-body" v-html="$page.project.content" />
     </section>
@@ -37,6 +49,8 @@ query Project ($path: String!) {
     mainImage
     color
     description
+    liveLink
+    repoLink
   }
 }
 </page-query>
@@ -47,6 +61,7 @@ query Project ($path: String!) {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom: var(--space-medium);
 }
 
 .project__name {
@@ -70,21 +85,36 @@ query Project ($path: String!) {
 }
 
 .project-links {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: var(--space-medium);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-medium);
 }
 
 .project-links__link {
-    margin: 0 var(--space-small);
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: var(--font-weight-bold);
+  margin: 0 var(--space-small);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
 }
 
 .markdown-body {
   width: 90%;
   margin-top: var(--space-medium);
+}
+
+@media all and (min-width: 600px) {
+  .project-image-container {
+    position: relative;
+    justify-content: center;
+    margin-left: -81%;
+    margin-right: -81%;
+    width: auto;
+
+  }
+
+  .project__image {
+    width: 50%;
+  }
 }
 </style>

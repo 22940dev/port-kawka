@@ -2,8 +2,8 @@
 title: Vue graphql jobs
 description: With this application, you can easily browse through the graphql related programming jobs. Job offers come from graphql jobs api.
 mainImage: http://dev.madebykawka.pl/images/jobs-light.png
-liveLink: aa
-repoLink: aa
+liveLink: https://github.com/MateuszKawka/vue-graphql-jobs
+repoLink: https://mateuszkawka.github.io/vue-graphql-jobs
 images: aa
 color: "#56CE8B"
 ---

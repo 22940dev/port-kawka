@@ -2,8 +2,8 @@
 title: Vue quiz app
 description: Trivia game powered by Open Trivia DB connected with firebase.
 mainImage: http://dev.madebykawka.pl/images/quiz-app-light.png
-liveLink: aa
-repoLink: aa
+liveLink: https://mateuszkawka.github.io/vue-quiz
+repoLink: https://github.com/MateuszKawka/vue-quiz
 images: aa
 color: "#6190E8"
 ---

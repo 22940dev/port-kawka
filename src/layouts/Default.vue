@@ -7,9 +7,15 @@
           <span class="header__subtitle">Front End Developer</span></g-link
         >
       </h1>
-      <a href="" class="header__link">Download cv</a>
+      <a
+        href="https://drive.google.com/file/d/167sRdn9vo0Zhj9zi01y9ksNu4fgejWjT/view"
+        class="header__link"
+        >Download cv</a
+      >
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
@@ -51,10 +57,11 @@ query {
 html {
   color: var(--text-color);
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 920px;
   margin: 0 auto;
   font-size: var(--font-size-medium);
   padding-bottom: var(--space-medium);
@@ -92,5 +99,12 @@ html {
   font-weight: var(--font-weight-bold);
   margin-top: var(--space-small);
   margin-bottom: var(--space-medium);
+}
+
+@media all and (min-width: 600px) {
+  .layout {
+    padding: 0 var(--space-medium);
+    width: 75%;
+  }
 }
 </style>

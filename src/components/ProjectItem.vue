@@ -30,6 +30,7 @@ export default {
     display: flex;
     flex-flow: column;
     align-items: center;
+
 }
 
 .project-item:not(:first-child) {
@@ -47,7 +48,7 @@ export default {
 }
 
 .project-item__content {
-    width: 75%;
+    width: 85%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -70,6 +71,12 @@ export default {
     margin-top: var(--space-small);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium)
+}
 
+@media all and (min-width: 600px) {
+    .project-item {
+        flex-flow: row;
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+    }
 }
 </style>
