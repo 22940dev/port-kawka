@@ -1,13 +1,14 @@
 <template>
-    <div class="project">
-        <div class="project-image-container" :style="{'background-color': `${project.node.color}`}">
-            <g-image :src="project.node.mainImage" class="project__image"/> 
+    <div class="project-item">
+        <div class="project-item-image-container" :style="{'background-color': `${project.node.color}`}">
+            <g-image :src="project.node.mainImage" class="project-item__image"/> 
         </div>
-        <div class="project__content">
-            <h2 class="project__name">{{project.node.title}}</h2>
-            <p class="project__desc">{{project.node.description}}</p>
-            <g-link class="project__link" :to="project.node.path">Details</g-link>
+        <div class="project-item__content">
+            <h2 class="project-item__name">{{project.node.title}}</h2>
+            <p class="project-item__desc">{{project.node.description}}</p>
+            <g-link class="project-item__link" :to="project.node.path">Details</g-link>
         </div>
+        
     </div>
 </template>
 
@@ -24,28 +25,28 @@ export default {
 </script>
 
 <style scoped>
-.project {
+.project-item {
     width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.project:not(:first-child) {
+.project-item:not(:first-child) {
     margin-top: var(--space-medium);
 }
 
-.project-image-container {
+.project-item-image-container {
     display: flex;
     width: 100%;
     height: auto;
 }
 
-.project__image {
+.project-item__image {
     width: 100%;
 }
 
-.project__content {
+.project-item__content {
     width: 75%;
     display: flex;
     flex-flow: column;
@@ -53,17 +54,17 @@ export default {
     padding: 0 var(--space-small);
 }
 
-.project__name {
+.project-item__name {
     text-align: center;
     margin-top: var(--space-small);
 }
 
-.project__desc {
+.project-item__desc {
     text-align: center;
     margin-top: var(--space-small);
 }
 
-.project__link {
+.project-item__link {
     text-decoration: none;
     color: var(--text-color);
     margin-top: var(--space-small);

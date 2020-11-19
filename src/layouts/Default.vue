@@ -24,7 +24,7 @@ query {
 <style>
 :root {
   --app-background-color: #fff;
-  --text-color: #000;
+  --text-color: #373737;
   --details-color: #ff3a20;
 
   --space-small: 1rem;
