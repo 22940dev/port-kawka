@@ -15,14 +15,14 @@
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"
-          >Code</a
+          >{{ $t('code') }}</a
         >
         <a
           :href="$page.project.liveLink"
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"
-          >Live preview</a
+          >{{ $t('livePreview') }}</a
         >
       </div>
       <article class="markdown-body" v-html="$page.project.content" />
@@ -114,7 +114,7 @@ query Project ($path: String!) {
   }
 
   .project__image {
-    width: 50%;
+    width: 25%;
   }
 }
 </style>

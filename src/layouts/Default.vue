@@ -7,10 +7,11 @@
           <span class="header__subtitle">Front End Developer</span></g-link
         >
       </h1>
+     
       <a
         href="https://drive.google.com/file/d/1tUfqn0I6IrUgohmq_E_-7WplHx8sStjK/view"
         class="header__link"
-        >Download cv</a
+        >{{ $t('downloadCV') }}</a
       >
     </header>
     <main>
@@ -21,6 +22,12 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  name: "DefaultLayout"
+}
+</script>
 
 <static-query>
 query {

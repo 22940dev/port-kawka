@@ -6,6 +6,7 @@ liveLink: https://mateuszkawka.github.io/vue-food-recipes
 repoLink: https://github.com/MateuszKawka/vue-food-recipes
 images: aa
 color: "#F87E5B"
+locale: en-en
 ---
 
 

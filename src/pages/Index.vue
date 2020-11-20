@@ -1,24 +1,25 @@
 <template>
   <Layout>
-    <ProjectsList :projects="$page.allProject.edges"/>
+    <LocaleSwitcher />
+    <ProjectsList :projects="$page.allProject.edges" />
   </Layout>
 </template>
 
 <script>
-import ProjectsList from "../components/ProjectsList"
-
+import ProjectsList from "../components/ProjectsList";
+import LocaleSwitcher from "../components/LocaleSwitcher";
 export default {
   name: "Homepage",
   components: {
-    ProjectsList
-  }
-}
+    ProjectsList,
+    LocaleSwitcher,
+  },
+};
 </script>
 
-
 <page-query>
-query {
-	allProject {
+query($locale: String) {
+	allProject(filter: { locale: { eq: $locale }}) {
     edges {
       node {
         id
@@ -27,6 +28,7 @@ query {
         description
         color
         mainImage
+        locale
       }
     }
   }

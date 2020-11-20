@@ -9,9 +9,9 @@
     <div class="project-item__content">
       <h2 class="project-item__name">{{ project.node.title }}</h2>
       <p class="project-item__desc">{{ project.node.description }}</p>
-      <g-link class="project-item__link" :to="project.node.path"
-        >Details</g-link
-      >
+      <g-link class="project-item__link" :to="project.node.path">{{
+        $t("details")
+      }}</g-link>
     </div>
   </div>
 </template>
@@ -55,7 +55,6 @@ export default {
   flex-flow: column;
   align-items: center;
   padding: 0 var(--space-small);
-  
 }
 
 .project-item__name {
@@ -66,7 +65,7 @@ export default {
 .project-item__desc {
   text-align: center;
   margin-top: var(--space-small);
-    overflow: hidden;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
