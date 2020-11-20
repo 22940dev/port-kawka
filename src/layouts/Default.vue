@@ -8,7 +8,7 @@
         >
       </h1>
       <a
-        href="https://drive.google.com/file/d/1o2cQG-OaBFX3km-197XUWNLxUhX22-jR/view"
+        href="https://drive.google.com/file/d/1tUfqn0I6IrUgohmq_E_-7WplHx8sStjK/view"
         class="header__link"
         >Download cv</a
       >
@@ -16,6 +16,9 @@
     <main>
       <slot />
     </main>
+    <footer class="footer">
+      <p>Build with <a class="footer__link" href="https://gridsome.org/" rel="noopener noreferrer" target="_blank">Gridsome</a> & made with ❤️ by Kawka Mateusz</p>
+    </footer>
   </div>
 </template>
 
@@ -101,10 +104,21 @@ html {
   margin-bottom: var(--space-medium);
 }
 
+.footer {
+  padding: 0 var(--space-small);
+  text-align: center;
+}
+
 @media all and (min-width: 600px) {
   .layout {
     padding: 0 var(--space-medium);
     width: 75%;
   }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
 }
 </style>
