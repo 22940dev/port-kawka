@@ -1,5 +1,7 @@
 /* SOURCE https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css*/
 
+
+
 .markdown-body .octicon {
     display: inline-block;
     fill: currentColor;
@@ -985,4 +987,7 @@
     margin: 0 .2em .25em -1.6em;
     vertical-align: middle;
   }
-  
+
+  .markdown-body {
+    color: var(--text-color);
+  }

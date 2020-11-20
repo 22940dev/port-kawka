@@ -51,7 +51,7 @@ export default {
 <style scoped>
 .locale-switcher {
     position: absolute;
-    right: 24px;
+    right: 12px;
     top: 12px;
     
 }
@@ -59,5 +59,11 @@ export default {
 .locale-switcher__item {
     font-size: var(--font-size-large);
     cursor: pointer;
+}
+
+@media all and (min-width: 600px) {
+  .locale-switcher {
+    right: 24px;
+  }
 }
 </style>

@@ -26,7 +26,6 @@ query($locale: String) {
         title
         path
         description
-        color
         mainImage
         locale
       }

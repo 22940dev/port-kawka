@@ -5,7 +5,6 @@ mainImage: "/quiz-app-light.png"
 liveLink: https://mateuszkawka.github.io/vue-quiz
 repoLink: https://github.com/MateuszKawka/vue-quiz
 images: aa
-color: "#36d57d"
 locale: pl-pl
 order: 2
 ---

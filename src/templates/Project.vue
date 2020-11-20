@@ -4,7 +4,6 @@
       <h2 class="project__name">{{ $page.project.title }}</h2>
       <div
         class="project-image-container"
-        :style="{ 'background-color': `${$page.project.color}` }"
       >
         <g-image :src="$page.project.mainImage" class="project__image" />
       </div>
@@ -47,7 +46,6 @@ query Project ($path: String!) {
     title
     content
     mainImage
-    color
     description
     liveLink
     repoLink
@@ -72,6 +70,7 @@ query Project ($path: String!) {
   display: flex;
   width: 100%;
   height: auto;
+  background: var(--project-image-background);
 }
 
 .project__image {
@@ -95,7 +94,6 @@ query Project ($path: String!) {
 .project-links__link {
   margin: 0 var(--space-small);
   color: var(--text-color);
-  text-decoration: none;
   font-weight: var(--font-weight-bold);
 }
 

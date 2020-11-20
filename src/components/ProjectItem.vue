@@ -2,7 +2,6 @@
   <div class="project-item">
     <div
       class="project-item-image-container"
-      :style="{ 'background-color': `${project.node.color}` }"
     >
       <g-image :src="project.node.mainImage" class="project-item__image" />
     </div>
@@ -33,16 +32,18 @@ export default {
   display: flex;
   flex-flow: column;
   align-items: center;
+  background: var(--project-item-background)
 }
 
 .project-item:not(:first-child) {
-  margin-top: var(--space-medium);
+  margin-top: var(--space-large);
 }
 
 .project-item-image-container {
   display: flex;
   width: 100%;
   height: auto;
+  background: var(--project-image-background);
 }
 
 .project-item__image {
@@ -73,7 +74,6 @@ export default {
 }
 
 .project-item__link {
-  text-decoration: none;
   color: var(--text-color);
   margin-top: var(--space-small);
   font-weight: var(--font-weight-bold);
