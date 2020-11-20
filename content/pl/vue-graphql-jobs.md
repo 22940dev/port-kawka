@@ -7,6 +7,7 @@ repoLink: https://github.com/MateuszKawka/vue-graphql-jobs
 images: aa
 color: "#6190e8"
 locale: pl-pl
+order: 1
 ---
 
 

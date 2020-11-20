@@ -47,6 +47,7 @@ export default {
 
 .project-item__image {
   width: 100%;
+  height: 100%;
 }
 
 .project-item__content {

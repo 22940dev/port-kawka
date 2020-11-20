@@ -6,23 +6,13 @@
 
 module.exports = {
   siteName: "Kawka Mateusz Front End Developer",
-  // siteUrl: 'https://mateuszkawka.github.io',
-  // pathPrefix: '/portfolio-gridsome',
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/en-en/*.md",
+        path: "content/**/*.md",
         typeName: "Project",
-        route: "en/:title",
-      },
-    },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        path: "content/pl-pl/*.md",
-        typeName: "Project",
-        route: "/:title",
+        route: ":title"
       },
     },
     {
@@ -35,15 +25,16 @@ module.exports = {
         ],
         pathAliases: {
           // path segment alias for each locales
-          "en-en": "en"
+          "pl-pl": "pl",
+          "en-en": "en",
         },
-        fallbackLocale: "en-en", // fallback language
+        fallbackLocale: "pl-pl", // fallback language
         defaultLocale: "pl-pl", // default language
-        enablePathRewrite: false, // rewrite path with locale prefix, default: true
+        enablePathRewrite: true, // rewrite path with locale prefix, default: true
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {
           "pl-pl": require("./src/locales/pl-pl.json"), // Messages files
-          "en-en": require("./src/locales/en-en.json")
+          "en-en": require("./src/locales/en-en.json"),
         },
       },
     },

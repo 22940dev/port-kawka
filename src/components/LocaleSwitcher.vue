@@ -37,10 +37,12 @@ export default {
   },
   methods: {
     localeChanged(locale) {
-      console.log(this.$i18n.locale);
+    
       this.$router.push({
         path: this.$tp(this.$route.path, locale, true),
       });
+
+       console.log(this.$i18n.locale);
     },
   },
 };

@@ -19,7 +19,7 @@ export default {
 
 <page-query>
 query($locale: String) {
-	allProject(filter: { locale: { eq: $locale }}) {
+	allProject(filter: { locale: { eq: $locale }}, sortBy: "order", order: ASC) {
     edges {
       node {
         id

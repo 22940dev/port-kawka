@@ -7,6 +7,7 @@ repoLink: https://github.com/MateuszKawka/vue-food-recipes
 images: aa
 color: "#F87E5B"
 locale: en-en
+order: 3
 ---
 
 

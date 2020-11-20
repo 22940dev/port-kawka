@@ -7,6 +7,7 @@ repoLink: https://github.com/MateuszKawka/vue-quiz
 images: aa
 color: "#36d57d"
 locale: en-en
+order: 2
 ---
 
 Trivia game powered by Open Trivia DB connected with firebase.

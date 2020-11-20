@@ -76,6 +76,7 @@ query Project ($path: String!) {
 
 .project__image {
   width: 100%;
+  height: 100%;
 }
 
 .project__desc {
