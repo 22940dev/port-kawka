@@ -5,8 +5,7 @@ mainImage: "/jobs.png"
 liveLink: https://mateuszkawka.github.io/vue-graphql-jobs
 repoLink: https://github.com/MateuszKawka/vue-graphql-jobs
 images: aa
-locale: en-en
-order: 1
+order: 2
 ---
 
 

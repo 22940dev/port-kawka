@@ -5,8 +5,7 @@ mainImage: "/quiz-app-light.png"
 liveLink: https://mateuszkawka.github.io/vue-quiz
 repoLink: https://github.com/MateuszKawka/vue-quiz
 images: aa
-locale: en-en
-order: 2
+order: 3
 ---
 
 Trivia game powered by Open Trivia DB connected with firebase.

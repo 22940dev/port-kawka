@@ -14,14 +14,14 @@
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"
-          >{{ $t('code') }}</a
+          >Code</a
         >
         <a
           :href="$page.project.liveLink"
           rel="noopener noreferrer"
           target="blank"
           class="project-links__link"
-          >{{ $t('livePreview') }}</a
+          >Live preview</a
         >
       </div>
       <article class="markdown-body" v-html="$page.project.content" />

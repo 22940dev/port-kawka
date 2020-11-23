@@ -1,25 +1,22 @@
 <template>
   <Layout>
-    <LocaleSwitcher />
     <ProjectsList :projects="$page.allProject.edges" />
   </Layout>
 </template>
 
 <script>
 import ProjectsList from "../components/ProjectsList";
-import LocaleSwitcher from "../components/LocaleSwitcher";
 export default {
   name: "Homepage",
   components: {
     ProjectsList,
-    LocaleSwitcher,
   },
 };
 </script>
 
 <page-query>
-query($locale: String) {
-	allProject(filter: { locale: { eq: $locale }}, sortBy: "order", order: ASC) {
+query {
+	allProject(sortBy: "order", order: ASC) {
     edges {
       node {
         id
@@ -27,7 +24,6 @@ query($locale: String) {
         path
         description
         mainImage
-        locale
       }
     }
   }

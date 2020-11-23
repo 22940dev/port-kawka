@@ -11,10 +11,9 @@
       <a
         href="https://drive.google.com/file/d/1tUfqn0I6IrUgohmq_E_-7WplHx8sStjK/view"
         class="header__link"
-        >{{ $t('downloadCV') }}</a
+        >Download CV</a
       >
       <ThemeSwitcher />
-      <LocaleSwitcher />
     </header>
     <main>
       <slot />
@@ -28,12 +27,10 @@
 
 <script>
 import ThemeSwitcher from "../components/ThemeSwitcher"
-import LocaleSwitcher from "../components/LocaleSwitcher"
 export default {
   name: "DefaultLayout",
   components: {
-    ThemeSwitcher,
-    LocaleSwitcher
+    ThemeSwitcher
   },
   methods: {
     backToTop() {

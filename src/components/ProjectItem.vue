@@ -8,9 +8,9 @@
     <div class="project-item__content">
       <h2 class="project-item__name">{{ project.node.title }}</h2>
       <p class="project-item__desc">{{ project.node.description }}</p>
-      <g-link class="project-item__link" :to="project.node.path">{{
-        $t("details")
-      }}</g-link>
+      <g-link class="project-item__link" :to="project.node.path">
+        Details
+      </g-link>
     </div>
   </div>
 </template>
