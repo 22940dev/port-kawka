@@ -1,13 +1,17 @@
 <template>
   <Layout>
+    <ClientOnly>
+      <Tinybox v-model="index" :images="images" no-thumbs />
+    </ClientOnly>
     <section class="project">
       <h2 class="project__name">{{ $page.project.title }}</h2>
-      <div
-        class="project-image-container"
-      >
-        <g-image :src="$page.project.mainImage" class="project__image" />
+      <div class="project-image-container">
+        <g-image
+          :src="mainImage"
+          class="project__image"
+          @click="() => (index = 0)"
+        />
       </div>
-      <!-- <p class="project__desc">{{ $page.project.description }}</p> -->
       <div class="project-links">
         <a
           :href="$page.project.repoLink"
@@ -30,8 +34,23 @@
 </template>
 
 <script>
+import Tinybox from "vue-tinybox";
 export default {
   name: "Project",
+  data: () => ({
+    index: null,
+  }),
+  components: {
+    Tinybox,
+  },
+  computed: {
+    mainImage() {
+      return this.$page.project.mainImage;
+    },
+    images() {
+      return [this.mainImage];
+    },
+  },
 };
 </script>
 
@@ -76,6 +95,7 @@ query Project ($path: String!) {
 .project__image {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .project__desc {
@@ -109,7 +129,6 @@ query Project ($path: String!) {
     margin-left: -81%;
     margin-right: -81%;
     width: auto;
-
   }
 
   .project__image {

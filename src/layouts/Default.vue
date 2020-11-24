@@ -7,7 +7,7 @@
           <span class="header__subtitle">Front End Developer</span></g-link
         >
       </h1>
-     
+
       <a
         href="https://drive.google.com/file/d/1tUfqn0I6IrUgohmq_E_-7WplHx8sStjK/view"
         class="header__link"
@@ -20,24 +20,34 @@
     </main>
     <footer class="footer">
       <a class="back-to-top-link" href="" @click="backToTop">Back to top</a>
-      <p>Build with <a class="footer__link" href="https://gridsome.org/" rel="noopener noreferrer" target="_blank">Gridsome</a> & made with ❤️ by Kawka Mateusz</p>
+      <p>
+        Build with
+        <a
+          class="footer__link"
+          href="https://gridsome.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Gridsome</a
+        >
+        & made with ❤️ by Kawka Mateusz
+      </p>
     </footer>
   </div>
 </template>
 
 <script>
-import ThemeSwitcher from "../components/ThemeSwitcher"
+import ThemeSwitcher from "../components/ThemeSwitcher";
 export default {
   name: "DefaultLayout",
   components: {
-    ThemeSwitcher
+    ThemeSwitcher,
   },
   methods: {
     backToTop() {
       window.scrollTo(0, 0);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <static-query>
@@ -76,7 +86,7 @@ html[class="scheme-dark"] {
   --details-color: #ff3a20;
   --project-item-background: var(--app-background-color);
   --project-image-background: var(--app-background-color);
-} 
+}
 
 html {
   color: var(--text-color);
@@ -130,7 +140,8 @@ body {
 
 .footer {
   height: auto;
-  padding: var(--space-medium) var(--space-small) var(--space-medium) var(--space-small);
+  padding: var(--space-medium) var(--space-small) var(--space-medium)
+    var(--space-small);
   text-align: center;
 }
 
@@ -138,6 +149,11 @@ body {
   display: block;
   color: var(--text-color);
   margin: var(--space-small) 0;
+}
+
+.tinybox__content__image {
+  max-width: none !important;
+  background-color: none !important;
 }
 
 @media all and (min-width: 600px) {
