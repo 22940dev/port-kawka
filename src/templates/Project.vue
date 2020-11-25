@@ -17,14 +17,14 @@
           :href="$page.project.repoLink"
           rel="noopener noreferrer"
           target="blank"
-          class="project-links__link"
+          class="link project-links__link"
           >Code</a
         >
         <a
           :href="$page.project.liveLink"
           rel="noopener noreferrer"
           target="blank"
-          class="project-links__link"
+          class="link project-links__link"
           >Live preview</a
         >
       </div>
@@ -113,7 +113,6 @@ query Project ($path: String!) {
 
 .project-links__link {
   margin: 0 var(--space-small);
-  color: var(--text-color);
   font-weight: var(--font-weight-bold);
 }
 

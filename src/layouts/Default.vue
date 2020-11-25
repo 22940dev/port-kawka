@@ -9,8 +9,8 @@
       </h1>
 
       <a
-        href="https://drive.google.com/file/d/1tUfqn0I6IrUgohmq_E_-7WplHx8sStjK/view"
-        class="header__link"
+        href="https://drive.google.com/file/d/1340935vv6-Ynsg9Sr8PICYoE3K_tySgl/view"
+        class="link header__link"
         >Download CV</a
       >
       <ThemeSwitcher />
@@ -112,6 +112,44 @@ body {
   box-sizing: border-box;
 }
 
+.link {
+  position: relative;
+  padding: 6px 24px;
+  color: var(--text-color);
+  font-weight: 600;
+  background: 0 0;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: color 0.25s ease-in-out;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  overflow: hidden;
+  margin: var(--space-small) 0;
+}
+
+.link:hover {
+  color: var(--app-background-color);
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--text-color);
+  transform: translateX(-100%);
+  transition: 0.25s all ease-in-out;
+}
+
+.link:hover::before {
+  transform: translateX(0);
+}
+
 .header {
   display: flex;
   flex-flow: column;
@@ -132,8 +170,6 @@ body {
 }
 
 .header__link {
-  color: var(--text-color);
-  font-weight: var(--font-weight-bold);
   margin-top: var(--space-small);
   margin-bottom: var(--space-medium);
 }

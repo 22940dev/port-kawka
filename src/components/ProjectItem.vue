@@ -8,7 +8,7 @@
     <div class="project-item__content">
       <h2 class="project-item__name">{{ project.node.title }}</h2>
       <p class="project-item__desc">{{ project.node.description }}</p>
-      <g-link class="project-item__link" :to="project.node.path">
+      <g-link class="project-item__link link" :to="project.node.path">
         Details
       </g-link>
     </div>
@@ -71,13 +71,6 @@ export default {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-}
-
-.project-item__link {
-  color: var(--text-color);
-  margin-top: var(--space-small);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-medium);
 }
 
 @media all and (min-width: 600px) {
