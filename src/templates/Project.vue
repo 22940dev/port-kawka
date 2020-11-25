@@ -105,7 +105,7 @@ query Project ($path: String!) {
 }
 
 .project-links {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: var(--space-medium);
