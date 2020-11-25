@@ -1,6 +1,6 @@
 ---
 title: Vue graphql jobs
-description: With this application, you can easily browse through the graphql related programming jobs.
+description: Jobs app with easy browse through the graphql related programming jobs.
 mainImage: "/jobs.webp"
 liveLink: https://mateuszkawka.github.io/vue-graphql-jobs
 repoLink: https://github.com/MateuszKawka/vue-graphql-jobs

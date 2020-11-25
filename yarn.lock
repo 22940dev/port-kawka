@@ -9364,6 +9364,13 @@ vue-meta@^2.2.2:
   dependencies:
     deepmerge "^4.2.2"
 
+vue-read-progress@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vue-read-progress/-/vue-read-progress-1.0.4.tgz#12309ce2d688481df499fd97b50fd7a1b3f26412"
+  integrity sha512-IAMoax2o0EYBuhIWirrnWwgVCIz8Cz9k/i5heHdjmuL8qqm7oZpx8vU4EttbW7BBGKdC5t53cadDdReNvT0dLA==
+  dependencies:
+    vue "^2.6.7"
+
 vue-router@^3.1.3:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.9.tgz#c016f42030ae2932f14e4748b39a1d9a0e250e66"
@@ -9409,7 +9416,7 @@ vue-tinybox@^1.3.0:
   resolved "https://registry.yarnpkg.com/vue-tinybox/-/vue-tinybox-1.3.0.tgz#6a374303ec7e39b5891ac6a3f953e87eb410d7dd"
   integrity sha512-Lju95JItQgTfaCzuH+98UjOXLDre5GpgZVAdZHXg9vVM4HiY5mBTQrTj02XL1Cu9cINox2gQhMvvYPkzAY83nw==
 
-vue@^2.6.10:
+vue@^2.6.10, vue@^2.6.7:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==

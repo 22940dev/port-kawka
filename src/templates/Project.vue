@@ -2,6 +2,7 @@
   <Layout>
     <ClientOnly>
       <Tinybox v-model="index" :images="images" no-thumbs />
+      <read-progress color="#c1c1c1"></read-progress>
     </ClientOnly>
     <section class="project">
       <h2 class="project__name">{{ $page.project.title }}</h2>
@@ -42,6 +43,10 @@ export default {
   }),
   components: {
     Tinybox,
+    ReadProgress: () =>
+      import("vue-read-progress")
+        .then((m) => m.default)
+        .catch(),
   },
   computed: {
     mainImage() {
@@ -49,7 +54,7 @@ export default {
     },
     images() {
       return [this.mainImage];
-    },
+    }
   },
 };
 </script>
