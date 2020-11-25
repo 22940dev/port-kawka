@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: "Kawka Mateusz Front End Developer",
+  icon: './src/favicon.svg',
   plugins: [
     {
       use: "@gridsome/source-filesystem",
