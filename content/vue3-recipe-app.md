@@ -17,11 +17,14 @@ Explore recipes comes from [themealdb](https://www.themealdb.com/) by categories
 ### Screenshots
 
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Recipe ![recipe](./images/vue3-recipe-app/recipe.webp)</span>
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Recipe </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">![recipe](./images/vue3-recipe-app/recipe.webp)</span>
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Recipes list ![recipes list](./images/vue3-recipe-app/recipes-list.webp)</span>
+<span style="display:block;font-weight:600; margin-bottom:24px;margin-top: 32px; text-align:center">Recipes list </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">![recipes list](./images/vue3-recipe-app/recipes-list.webp)</span>
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Recipes preview 
+<span style="display:block;font-weight:600; margin-bottom:24px;margin-top: 32px; text-align:center">Recipes preview  </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">
 ![recipes preview](./images/vue3-recipe-app/recipes-preview.webp)</span>
 
 ## Build with

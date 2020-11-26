@@ -20,11 +20,14 @@ Trivia game powered by Open Trivia DB connected with firebase.
 
 ### Screenshots
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Quiz start ![quiz start](./images/vue-quiz-app/quiz-start.webp)</span>
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Quiz start </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">![quiz start](./images/vue-quiz-app/quiz-start.webp)</span>
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Quiz game ![quiz game](./images/vue-quiz-app/quiz-game.webp)</span>
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Quiz game </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">![quiz game](./images/vue-quiz-app/quiz-game.webp)</span>
 
-<span style="display:block;margin:0 auto;text-align: center;max-width:420px">Quiz endgame ![quiz endgame](./images/vue-quiz-app/quiz-endgame.webp)</span>
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Quiz endgame </span>
+<span style="display:block;margin:0 auto;text-align: center;max-width:420px">![quiz endgame](./images/vue-quiz-app/quiz-endgame.webp)</span>
 
 
 ## Build with

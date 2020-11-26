@@ -13,9 +13,13 @@ Jobs app with easy browse through the graphql related programming jobs. Job offe
 
 ### Screenshots
 
+
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Job</span>
 <span style="display:block;margin:0 auto;max-width:420px">![job](./images/vue-graphql-jobs/job.webp)</span>
 
-<span style="display:block;margin:0 auto;max-width:420px">![job list](./images/vue-graphql-jobs/jobs-list.webp)</span>
+
+<span style="display:block;font-weight:600; margin-bottom:24px; text-align:center">Jobs list</span>
+<span style="display:block;margin:0 auto;max-width:420px">![jobs list](./images/vue-graphql-jobs/jobs-list.webp)</span>
 
 ## Build with
 
