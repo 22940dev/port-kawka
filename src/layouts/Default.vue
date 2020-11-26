@@ -86,6 +86,7 @@ body {
 }
 
 .link {
+  display: inline-block;
   position: relative;
   padding: 6px 24px;
   color: var(--text-color);
@@ -125,7 +126,7 @@ body {
 
 .tinybox__content__image {
   max-width: none !important;
-  background-color: none !important;
+  background: none !important;
 }
 
 .fade-enter-active {
