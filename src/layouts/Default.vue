@@ -1,9 +1,11 @@
 <template>
   <div class="layout">
     <Header />
-    <main>
-      <slot />
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
     <Footer />
   </div>
 </template>
@@ -16,8 +18,8 @@ export default {
   name: "DefaultLayout",
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
@@ -161,6 +163,14 @@ body {
 .tinybox__content__image {
   max-width: none !important;
   background-color: none !important;
+}
+
+.fade-enter-active {
+  transition: opacity 0.35s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 
 @media all and (min-width: 600px) {
