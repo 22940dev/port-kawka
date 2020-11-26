@@ -123,43 +123,6 @@ body {
   transform: translateX(0);
 }
 
-.header {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-.header__title {
-  color: var(--text-color);
-  text-decoration: none;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin: var(--space-small);
-}
-
-.header__subtitle {
-  font-size: var(--font-size-medium);
-}
-
-.header__link {
-  margin-top: var(--space-small);
-  margin-bottom: var(--space-medium);
-}
-
-.footer {
-  height: auto;
-  padding: var(--space-medium) var(--space-small) var(--space-medium)
-    var(--space-small);
-  text-align: center;
-}
-
-.back-to-top-link {
-  display: block;
-  color: var(--text-color);
-  margin: var(--space-small) 0;
-}
-
 .tinybox__content__image {
   max-width: none !important;
   background-color: none !important;

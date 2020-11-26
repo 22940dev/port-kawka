@@ -3,7 +3,7 @@
     <div
       class="project-item-image-container"
     >
-      <g-image :src="project.node.mainImage" class="project-item__image" />
+      <g-image :src="project.node.mainImage" class="project-item__image" :alt="project.node.title" />
     </div>
     <div class="project-item__content">
       <h2 class="project-item__name">{{ project.node.title }}</h2>

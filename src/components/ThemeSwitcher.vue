@@ -46,9 +46,9 @@
 
 <script>
 const THEME = "theme";
-const THEME_DARK = "dark"
-const THEME_LIGHT = "light"
-const THEME_DARK_CLASS = "scheme-dark"
+const THEME_DARK = "dark";
+const THEME_LIGHT = "light";
+const THEME_DARK_CLASS = "scheme-dark";
 
 export default {
   data() {
@@ -83,18 +83,18 @@ export default {
   },
   mounted() {
     this.setTheme();
-  },
+  }
 };
 </script>
 
 <style scoped>
 .theme-switcher {
-  padding: 0;
+  padding: 2px 3px 0px 3px;
   background: none;
   border: none;
   color: var(--app-text-color);
   position: absolute;
-  top: 16px;
+  top: 20px;
   left: 12px;
   cursor: pointer;
 }
