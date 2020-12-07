@@ -5,11 +5,12 @@ mainImage: "/vue3recipes.webp"
 liveLink: https://mateuszkawka.github.io/vue3-recipes/
 repoLink: https://github.com/MateuszKawka/vue3-recipes
 images: aa
-order: 1
+order: 2
+filter: vue
 ---
 
 
-## APP IN PROGRESS
+## VUE3 RECIPES APP
 
 
 Explore recipes comes from [themealdb](https://www.themealdb.com/) by categories, country or just got the random one. Easy instructions and shopping list with export feature.

@@ -6,6 +6,7 @@ liveLink: https://mateuszkawka.github.io/vue-quiz
 repoLink: https://github.com/MateuszKawka/vue-quiz
 images: aa
 order: 3
+filter: vue
 ---
 
 Trivia game powered by Open Trivia DB connected with firebase.

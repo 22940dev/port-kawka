@@ -106,6 +106,10 @@ body {
   color: var(--app-background-color);
 }
 
+.link--disabled {
+  background: gray;
+}
+
 .link:before {
   content: "";
   position: absolute;

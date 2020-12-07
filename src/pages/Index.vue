@@ -1,15 +1,30 @@
 <template>
   <Layout>
-    <ProjectsList :projects="$page.allProject.edges" />
+    <Filters :pickedFilter.sync="pickedFilter" />
+    <ProjectsList :projects="filteredPost" />
   </Layout>
 </template>
 
 <script>
 import ProjectsList from "../components/ProjectsList";
+import Filters from "../components/Filters";
 export default {
   name: "Homepage",
+  data: () => ({
+    pickedFilter: "",
+  }),
   components: {
     ProjectsList,
+    Filters,
+  },
+  computed: {
+    filteredPost() {
+      return this.pickedFilter.length
+        ? this.$page.allProject.edges.filter(
+            (item) => item.node.filter === this.pickedFilter
+          )
+        : this.$page.allProject.edges;
+    },
   },
 };
 </script>
@@ -24,6 +39,7 @@ query {
         path
         description
         mainImage
+        filter
       }
     }
   }

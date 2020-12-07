@@ -110,7 +110,7 @@ export default {
   height: auto;
   position: absolute;
   right: 12px;
-  fill: var(--text-color)
+  fill: var(--text-color);
 }
 
 @media all and (min-width: 360px) {

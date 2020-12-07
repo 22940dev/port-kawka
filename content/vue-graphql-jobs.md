@@ -5,7 +5,8 @@ mainImage: "/jobs.webp"
 liveLink: https://mateuszkawka.github.io/vue-graphql-jobs
 repoLink: https://github.com/MateuszKawka/vue-graphql-jobs
 images: aa
-order: 2
+order: 1
+filter: vue
 ---
 
 
