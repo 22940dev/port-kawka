@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Kawka Mateusz Front End Developer",
+  siteName: "Maddie Campbell Tree-hugger extremist",
   icon: './src/favicon.svg',
   plugins: [
     {
