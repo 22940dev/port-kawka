@@ -4,12 +4,12 @@
       <ThemeSwitcher />
       <h1 class="header__logo">
         <g-link to="/" class="header__title"
-          >Kawka Mateusz
-          <span class="header__subtitle">Front End Developer</span></g-link
+          >Maddie Campbell
+          <span class="header__subtitle">Tree-huggin tree-hugger</span></g-link
         >
       </h1>
       <a
-        href="https://github.com/MateuszKawka"
+        href="https://github.com/uvacoder"
         target="_blank"
         rel="noopener noreferrer"
         class="github-link"
@@ -22,11 +22,6 @@
         </svg>
       </a>
     </div>
-    <a
-      href="https://drive.google.com/file/d/1340935vv6-Ynsg9Sr8PICYoE3K_tySgl/view"
-      class="link header__link"
-      >Download CV</a
-    >
   </header>
 </template>
 
