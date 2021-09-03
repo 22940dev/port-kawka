@@ -10,7 +10,7 @@
         target="_blank"
         >Gridsome</a
       >
-      & made with ❤️ by Kawka Mateusz
+      & made with ❤️ by Maddie Campbell
     </p>
   </footer>
 </template>
